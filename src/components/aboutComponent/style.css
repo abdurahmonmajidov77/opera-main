@@ -1,0 +1,113 @@
+.aboutComp{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+} 
+.aboutComp .container{ 
+    padding: 7%; 
+} 
+.aboutComp h1{ 
+    font-size: 4.5vw; 
+    color: var(--black); 
+} 
+.aboutComp p{ 
+    width: 60%; 
+    margin: 3% auto; 
+    color: var(--black); 
+    font-size: 1.6vw; 
+} 
+.overP{ 
+    display: none; 
+    position: fixed; 
+} 
+.overlay{
+    display: none;
+}
+.aboutComp button{ 
+    color: var(--black); 
+    border: 0.2vw solid var(--gold); 
+    padding: 1.5% 4%; 
+    border-radius: 2vw; 
+    font-size: 1.45vw; 
+} 
+.aboutComp button:hover{ 
+    background: var(--gold); 
+    color: var(--white); 
+} 
+.ModalUpOl{ 
+    position: fixed; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 5; 
+    width: 100%;
+} 
+.aboutComp .aboutModal { 
+    display: none; 
+    position: fixed; 
+    background: var(--white); 
+    z-index: 4; 
+    width: 40%; 
+    animation-duration: 2s; 
+    height: 90vh; 
+    overflow-y: scroll;
+} 
+.aboutComp .aboutModal img{ 
+    width: 100%; 
+    margin-bottom: 7%; 
+} 
+.aboutComp .aboutModal h1{ 
+    font-size: 2.6vw; 
+} 
+.aboutComp .aboutModal h2{ 
+    font-size: 2.1vw; 
+} 
+.aboutComp .aboutModal p{ 
+    width: 80%; 
+    margin: 5% auto; 
+    font-size: 1.4vw; 
+} 
+.aboutComp i{ 
+    right: 5%; 
+    top: 5%; 
+    font-size: 3vw; 
+    z-index: 3; 
+    color: #FFF; 
+    cursor: pointer; 
+}
+@media(max-width: 650px){ 
+    .aboutComp h1{ 
+        font-size: 8vw; 
+    } 
+    .aboutComp p{ 
+        font-size: 4vw; 
+        width: 95%;
+    } 
+    .aboutComp button{ 
+        font-size: 5vw; 
+        font-weight: 400;
+        padding: 2.3vw 5vw; 
+        margin-top: 2vw;
+    } 
+    .aboutComp .aboutModal{ 
+        width: 85%; 
+        height: 90vh;
+    }
+    .aboutComp .aboutModal h1{ 
+    font-size: 6vw; 
+    }
+    .aboutComp .aboutModal h2{ 
+        font-size: 5vw; 
+    } 
+    .aboutComp .aboutModal p{ 
+        width: 80%; 
+        font-size: 3.8vw; 
+    } 
+    .aboutComp i{ 
+        font-size: 8vw;
+        top: 3%;
+        right: 5%; 
+    } 
+}

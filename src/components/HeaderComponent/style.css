@@ -1,0 +1,67 @@
+.Header{
+    width: 100%;
+    padding: 4vw 2.5vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.HeaderBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+.HeaderImg{
+    width: 55%;
+   }
+.HeaderInbox{
+    position: relative;
+}
+.HeaderInbox img{
+    width: 85%;
+    
+}
+.HeaderInbox p{
+    font-size: 2.1vw;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 3vw;
+    margin-top: .1vw;
+}
+@media screen  and (min-width: 1800px) {
+    .HeaderImg{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .HeaderBox{
+        flex-direction: column;
+    }
+    .Header{
+        padding-top: 35%;
+        padding-bottom: 15%;
+    }
+    .HeaderInbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .HeaderInbox p{
+        max-width: 98%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 4vw;
+    }
+    .HeaderInbox img{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .HeaderImg{
+        width: 100%;
+    }
+}
